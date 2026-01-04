@@ -9,7 +9,6 @@ function closeMenu() {
     document.querySelector(".menu-btn").style.display = "block";
     document.getElementById("menu").style.display="none"
 }
-
 document.querySelectorAll('#menu').forEach(link => {
     link.addEventListener('click', closeMenu);
 });

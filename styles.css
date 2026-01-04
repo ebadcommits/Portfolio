@@ -83,17 +83,21 @@ a {
 
 .projects-card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
 }
+.projects-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 .projects-card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .projects-card h3 {
     color: #555;
-    margin-bottom: 10px;
+    /* margin-bottom: px; */
 }
 .projects-card p {
     color: #666;
@@ -105,4 +109,40 @@ a {
 .projects-card a:hover {
     text-decoration-color: #335580;
     color: #335580;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+footer a {
+    color: #6684a5;
+}
+footer a:hover {
+    text-decoration-color: #335580;
+    color: #335580;
+}
+@media (min-width: 768px) {
+    body{
+        width: 65%;
+        margin: auto;
+        justify-content: center;
+        /* align-items: center; */
+
+    }
+    .menu-btn, .closemenu {
+        display: none;
+    }
+    ul {
+        display: flex;
+        gap: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    li:hover{
+        opacity: 0.7;
+    }
 }
