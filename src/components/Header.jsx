@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="p-4">
-      <nav className="flex justify-between items-start">
+      <nav className="flex justify-between items-start relative">
         <div className="navigation">
           <h1 className="text-4xl font-black leading-tight">
             Ebad<br />Sheikh
@@ -21,23 +21,17 @@ export default function Header() {
         </div>
 
         <button
-          className="absolute top-4 right-4 bg-none border-none cursor-pointer outline-none md:hidden"
+          className={`absolute top-1.5 right-0 bg-none border-none cursor-pointer outline-none md:hidden ${menuOpen ? 'hidden' : ''}`}
           onClick={toggleMenu}
         >
           <img src="menu-icon.png" alt="open" width="28" />
         </button>
 
         <ul
-          className={`fixed top-4 right-0 h-32 w-2/8 bg-white bg-opacity-80 flex flex-col items-left justify-center gap-3 p-2.5 m-0 rounded-tl-xl rounded-bl-xl z-50 transition-transform duration-300 ${
+          className={`fixed top-11 right-0 h-12 w-2/4 bg-white bg-opacity-80 flex items-left gap-3 p-2.5 m-0 rounded-tl-xl rounded-bl-xl z-50 transition-transform duration-300 ${
             menuOpen ? 'translate-x-0' : 'translate-x-full'
           } md:static md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:gap-4 md:rounded-none`}
         >
-          <button
-            className="absolute top-3 right-4 bg-none border-none cursor-pointer outline-none md:hidden"
-            onClick={closeMenu}
-          >
-            <img src="close-menu.png" alt="close" width="22" />
-          </button>
           <li>
             <a
               href="https://github.com/ebadcommits"
@@ -61,6 +55,12 @@ export default function Header() {
               <img src="linkedin.png" alt="linkedin" width="28" />
             </a>
           </li>
+          <button
+            className="absolute top-3.5 right-8 bg-none border-none cursor-pointer outline-none md:hidden"
+            onClick={closeMenu}
+          >
+            <img src="close-menu.png" alt="close" width="22" />
+          </button>
         </ul>
       </nav>
     </header>
