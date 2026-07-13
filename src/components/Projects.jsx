@@ -38,22 +38,22 @@ export default function Projects() {
     <section className="p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
         {projects.map((project) => (
-          <div
+          <a
             key={project.id}
-            className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
           >
-            <h3 className="text-sm font-semibold text-gray-500 mb-2">Project {project.id}</h3>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl font-bold text-gray-800 hover:text-gray-600 block mb-1"
-            >
-              {project.title}
-            </a>
-            <h4 className="text-base font-semibold text-gray-600 mb-3">{project.subtitle}</h4>
-            <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
-          </div>
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow h-full cursor-pointer">
+              <h3 className="text-sm font-semibold text-gray-500 mb-2">Project {project.id}</h3>
+              <h3 className="text-2xl font-bold text-gray-800 hover:text-gray-600 block mb-1">
+                {project.title}
+              </h3>
+              <h4 className="text-base font-semibold text-gray-600 mb-3">{project.subtitle}</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
+            </div>
+          </a>
         ))}
       </div>
     </section>
