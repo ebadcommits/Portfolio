@@ -3,6 +3,7 @@ const projects = [
     id: 1,
     title: 'Sushi',
     subtitle: 'A Restaurant Website',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Animate on Scroll'],
     description:
       'A visually appealing landing page for a restaurant. Crafted with modern UI/UX principles. Designed to be responsive across all devices, it highlights menu sections and branding through a sleek layout.',
     link: 'https://ebadcommits.github.io/Sushi-Restaurant/',
@@ -11,6 +12,7 @@ const projects = [
     id: 2,
     title: 'Fries n Ice',
     subtitle: 'Food Ordering Website',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
     description:
       'A responsive restaurant website with a dynamic food menu, cart system, checkout page, and contact form, built with HTML, CSS, and JavaScript.',
     link: 'https://ebadcommits.github.io/FlockbyEbad/',
@@ -19,6 +21,7 @@ const projects = [
     id: 3,
     title: 'We Code',
     subtitle: 'Coding Website',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Swiper.js', 'Smooth Scroll'],
     description:
       'An interactive website aimed at inspiring developers. It combines motivational design, smooth navigation, and storytelling. Showcasing creativity while keeping the experience clean and user-friendly.',
     link: 'https://ebadcommits.github.io/We-Code./',
@@ -27,6 +30,7 @@ const projects = [
     id: 4,
     title: 'Microsoft Calculator',
     subtitle: 'An exact copy of Microsoft Calculator',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
     description:
       'A fully functional clone of the Microsoft Calculator built with HTML, CSS, and JavaScript. Features real-time calculations, responsive design, and a clean interface that closely replicates the original app.',
     link: 'https://ebadcommits.github.io/Microsoft-Calculator/',
@@ -51,6 +55,7 @@ export default function Projects() {
                 {project.title}
               </h3>
               <h4 className="text-base font-semibold text-gray-600 mb-3">{project.subtitle}</h4>
+              <h3 className="text-sm font-semibold text-orange-300 mb-2">{project.techStack.join(', ')}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
             </div>
           </a>
