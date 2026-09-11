@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: 'Sushi',
     subtitle: 'A Restaurant Website',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Animate on Scroll'],
+    techStack: ['HTML', 'CSS', 'Animate on Scroll'],
     description:
       'A visually appealing landing page for a restaurant. Crafted with modern UI/UX principles. Designed to be responsive across all devices, it highlights menu sections and branding through a sleek layout.',
     link: 'https://ebadcommits.github.io/Sushi-Restaurant/',
@@ -34,6 +34,15 @@ const projects = [
     description:
       'A fully functional clone of the Microsoft Calculator built with HTML, CSS, and JavaScript. Features real-time calculations, responsive design, and a clean interface that closely replicates the original app.',
     link: 'https://ebadcommits.github.io/Microsoft-Calculator/',
+  },
+    {
+    id: 5,
+    title: 'Summer Camp 2026',
+    subtitle: 'Built together by summer campers',
+    techStack: ['HTML', 'CSS'],
+    description:
+      'A website built by summer campers for the Summer Camp 2026 event. Where Each camper created his own choice of card.',
+    link: 'https://ebadcommits.github.io/summer-camp-2026/',
   },
 ]
 
