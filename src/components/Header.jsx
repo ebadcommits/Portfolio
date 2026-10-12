@@ -48,7 +48,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/ebad-sheikh-35095a251/"
+              href="https://www.linkedin.com/in/ebad-sheikh/"
               target="_blank"
               rel="noopener noreferrer"
             >
